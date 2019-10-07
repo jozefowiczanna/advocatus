@@ -6,83 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Hello, world!</title>
   </head>
   <body>
     
-    <header class="page-header container">
-        <div class="container">
-            <a href="#" class="brand">
-                <img src="" alt="Company">
-            </a>
-        </div>
-
-        <nav>
-            <ul class="menu-items">
-                <li><a href="#" class="active">About Us</a></li>
-                <li><a href="#">Practice Area</a></li>
-                <li><a href="#">Lawyers</a></li>
-                <li><a href="#">Publications</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <header class="page-header">
+        
+        <nav class="navbar fixed-top navbar-expand-md">
+            <div class="container">
+                <a href="#" class="navbar-brand">advocatus<span>.</span></a>
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link underline active" href="#">About Us</a>
+                    <a class="nav-item nav-link underline" href="#">Practice Area</a>
+                    <a class="nav-item nav-link underline" href="#">Lawyers</a>
+                    <a class="nav-item nav-link underline" href="#">Publications</a>
+                    <a class="nav-item nav-link underline" href="#">FAQ</a>
+                    <a class="nav-item nav-link underline" href="#">Contact</a>
+                </div>
+            </div>
         </nav>
     </header>
 
     <section class="page-section hero-section">
-        <header class="section-header container" style="position: relative; height: 100%">
-            <div class="100-h" style="position: absolute; bottom: 0; width: 100%">
-                <div class="row d-flex">
-                    <div class="hero-section-heading col-7">
-                        <h2 class="title">Adam Suaerez</h2>
-                        <p class="subtitle">Lawyer</p>
+        <header class="hero-section__header h-100">
+            <div class="row align-items-end justify-content-center h-100 pb-5">
+                <div class="container">
+                    <div class="col-10 offset-1">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="hero-section__heading">
+                                <h2 class="title">Adam Suaerez</h2>
+                                <p class="subtitle">Lawyer</p>
+                            </div>
+                            <section class="hero-cta">
+                                <a href="#" class="btn btn-cta">Contact Me</a>
+                            </section>
+                        </div>
                     </div>
-                    <section class="hero-cta align-self-center col-3">
-                        <a href="#" class="btn btn-cta">Contact Me</a>
-                    </section>
                 </div>
             </div>
         </header>
     </section>
 
-    <section class="page-section about-section">
-        <header class="section-header">
-            <h2>About us</h2>
-            <p>We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
-            <div class="bg-number">01</div>
+    <section class="page-section about-section container">
+        <header class="section-header row align-items-center position-relative">
+            <div class="section-header__box d-flex flex-column justify-content-between" >
+                    <h2 class="section-header__heading">About us</h2>
+                    <p class="section-header__text align-self-end">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
+            </div>
+            <div class="bg-number position-absolute" style="top: 0;">01</div>
         </header>
-        <section class="section-wrapper">
-            <section class="history-section">
+        <section class="section-wrapper row">
+            <section class="history-section col">
                 <h3>History</h3>
                 <div class="inner-wrapper">
-                    <div class="history-section__date">
-                        2016 -
-                    </div>
-                    <div class="history-section__text">
-                        In hac habitasse platea dictumst Nunc ultricies iaculis luctus Aliquam eget eros eget sapien dictum.
-                    </div>
-                </div>
-                <div class="inner-wrapper">
-                    <div class="history-section__date">
-                        2015 -
-                    </div>
-                    <div class="history-section__text">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                    <div class="d-flex align-items-center">
+                        <div class="history-section__date">
+                            2016 -
+                        </div>
+                        <p class="history-section__text">
+                            In hac habitasse platea dictumst Nunc ultricies iaculis luctus Aliquam eget eros eget sapien dictum.
+                        </p>
                     </div>
                 </div>
                 <div class="inner-wrapper">
-                    <div class="history-section__date">
-                        2014 -
+                    <div class="d-flex align-items-center">
+                        <div class="history-section__date">
+                            2015 -
+                        </div>
+                        <p class="history-section__text">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                        </p>
                     </div>
-                    <div class="history-section__text">
-                        In hac habitasse platea dictumst Nunc ultricies iaculis luctus Aliquam eget eros eget sapien.
+                </div>
+                <div class="inner-wrapper">
+                    <div class="d-flex align-items-center">
+                        <div class="history-section__date">
+                            2014 -
+                        </div>
+                        <p class="history-section__text">
+                            In hac habitasse platea dictumst Nunc ultricies iaculis luctus Aliquam eget eros eget sapien.
+                        </p>
                     </div>
                 </div>
             </section>
-            <section class="expertise-section">
+            <section class="expertise-section col">
                 <h3>Expertise</h3>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
             </section>
