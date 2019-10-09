@@ -26,19 +26,27 @@
                 
             </div>
         </div>
-    <header class="page-header">
+    <header class="page-header" id="top">
         
-        <nav class="navbar fixed-top navbar-expand-md">
+        <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container">
-                <a href="#" class="navbar-brand">advocatus<span>.</span></a>
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link underline active" href="#">About Us</a>
-                    <a class="nav-item nav-link underline" href="#">Practice Area</a>
-                    <a class="nav-item nav-link underline" href="#">Lawyers</a>
-                    <a class="nav-item nav-link underline" href="#">Publications</a>
-                    <a class="nav-item nav-link underline" href="#">FAQ</a>
-                    <a class="nav-item nav-link underline" href="#">Contact</a>
-                </div>
+                
+                <a href="#top" class="navbar-brand">advocatus<span>.</span></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="myTogglerNav" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+
+                <section class="collapse navbar-collapse" id="myTogglerNav">
+                    <div class="navbar-nav ml-auto">
+                        <a data-toggle="collapse"  data-target=".navbar-collapse.show" class="nav-item nav-link underline active" href="#about">About Us</a>
+                        <a data-toggle="collapse"  data-target=".navbar-collapse.show" class="nav-item nav-link underline" href="#practice">Practice Area</a>
+                        <a data-toggle="collapse"  data-target=".navbar-collapse.show" class="nav-item nav-link underline" href="#lawyers">Lawyers</a>
+                        <a data-toggle="collapse"  data-target=".navbar-collapse.show" class="nav-item nav-link underline" href="#publications">Publications</a>
+                        <a data-toggle="collapse"  data-target=".navbar-collapse.show" class="nav-item nav-link underline" href="#faq">FAQ</a>
+                        <a data-toggle="collapse"  data-target=".navbar-collapse.show" class="nav-item nav-link underline" href="#contact">Contact</a>
+                    </div>
+                </section>
+
             </div>
         </nav>
     </header>
@@ -47,15 +55,17 @@
         <header class="hero-section__header h-100">
             <div class="container h-100">
                 <div class="row align-items-end justify-content-center h-100 pb-5">
-                    <div class="col-10 offset-1">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="hero-section__heading">
-                                <h2 class="title">Adam Suaerez</h2>
-                                <p class="subtitle">Lawyer</p>
+                    <div class="col col-lg-10 offset-lg-1">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="hero-section__heading">
+                                    <h2 class="title text-center">Adam Suaerez</h2>
+                                    <p class="subtitle">Lawyer</p>
+                                </div>
+                                <section class="hero-cta">
+                                    <a href="#contact" class="hero-cta__button btn btn-cta">Contact Me</a>
+                                </section>
                             </div>
-                            <section class="hero-cta">
-                                <a href="#" class="btn btn-cta">Contact Me</a>
-                            </section>
                         </div>
                     </div>
                 </div>
@@ -65,7 +75,7 @@
 
     <!-- About Us  -->
 
-    <section class="page-section about-section container">
+    <section class="page-section about-section container" id="about">
         <header class="section-header row align-items-center position-relative">
             <div class="section-header__box d-flex flex-column justify-content-between" >
                 <h2 class="section-header__heading">About Us</h2>
@@ -73,12 +83,12 @@
             </div>
         </header>
         <div class="section-wrapper row">
-            <section class="history-section col">
+            <section class="history-section col-md-6 mb-5">
                 <h3>History</h3>
                 <div class="inner-wrapper">
                     <div class="d-flex align-items-center">
                         <div class="history-section__date">
-                            2016 -
+                            2016 &nbsp -
                         </div>
                         <p class="history-section__text">
                             In hac habitasse platea dictumst Nunc ultricies iaculis luctus Aliquam eget eros eget sapien dictum.
@@ -88,7 +98,7 @@
                 <div class="inner-wrapper">
                     <div class="d-flex align-items-center">
                         <div class="history-section__date">
-                            2015 -
+                            2015 &nbsp -
                         </div>
                         <p class="history-section__text">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
@@ -98,7 +108,7 @@
                 <div class="inner-wrapper">
                     <div class="d-flex align-items-center">
                         <div class="history-section__date">
-                            2014 -
+                            2014 &nbsp -
                         </div>
                         <p class="history-section__text">
                             In hac habitasse platea dictumst Nunc ultricies iaculis luctus Aliquam eget eros eget sapien.
@@ -106,7 +116,7 @@
                     </div>
                 </div>
             </section>
-            <section class="expertise-section col">
+            <section class="expertise-section col-md-6 mb-5">
                 <h3>Expertise</h3>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
             </section>
@@ -115,7 +125,7 @@
 
     <!-- Practice Area  -->
 
-    <section class="page-section dark practice-section">
+    <section class="page-section dark practice-section" id="practice">
         <div class="container">
             <header class="section-header row align-items-center position-relative">
                 <div class="section-header__box d-flex flex-column justify-content-between" >
@@ -124,8 +134,8 @@
                 </div>
             </header>
             <div class="section-wrapper row">
-                <div class="col-5 offset-1">
-                    <div class="d-flex mb-5">
+                <div class="practice__col col-lg-5 offset-md-1">
+                    <div class="d-md-flex mb-5">
                         <div class="practice__icon" >
                             <i class="far fa-handshake"></i>
                         </div>
@@ -134,7 +144,7 @@
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. </p>
                         </div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-md-flex">
                         <div class="practice__icon" >
                             <i class="fas fa-desktop"></i>
                         </div>
@@ -145,8 +155,8 @@
                     </div>
                 </div>
 
-                <div class="col-5 offset-1">
-                    <div class="d-flex mb-5">
+                <div class="practice__col col-lg-5 offset-md-1">
+                    <div class="d-md-flex mb-5">
                         <div class="practice__icon" >
                             <i class="fas fa-wrench"></i>
                         </div>
@@ -155,7 +165,7 @@
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. </p>
                         </div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-md-flex">
                         <div class="practice__icon" >
                             <i class="fas fa-home"></i>
                         </div>
@@ -171,7 +181,7 @@
 
     <!-- Lawyers  -->
 
-    <section class="page-section lawyers-section container">
+    <section class="page-section lawyers-section container" id="lawyers">
         <header class="section-header row align-items-center position-relative">
             <div class="section-header__box d-flex flex-column justify-content-between" >
                 <h2 class="section-header__heading">Meet Our Attorney</h2>
@@ -179,30 +189,30 @@
             </div>
         </header>
         <div class="section-wrapper row">
-            <div class="col-3">
+            <div class="col-sm-6 col-lg-4 col-xl-3 text-center text-md-left">
                 <img class="lawyer-img" src="images/lawyer1.jpg" alt="Lawyer">
-                <h3 class="name">
+                <h3 class="name mb-5">
                     Adam Suarez
                     <span>Attorney General</span>
                 </h3>
             </div>
-            <div class="col-3">
+            <div class="col-sm-6 col-lg-4 col-xl-3 text-center text-md-left">
                 <img class="lawyer-img" src="images/lawyer2.jpg" alt="Lawyer">
-                <h3 class="name">
+                <h3 class="name mb-5">
                     Lina Suarez
                     <span>Attorney General</span>
                 </h3>
             </div>
-            <div class="col-3">
+            <div class="col-sm-6 col-lg-4 col-xl-3 text-center text-md-left">
                 <img class="lawyer-img" src="images/lawyer3.jpg" alt="Lawyer">
-                <h3 class="name">
+                <h3 class="name mb-5">
                     Jems Snow
                     <span>Attorney General</span>
                 </h3>
             </div>
-            <div class="col-3">
+            <div class="col-sm-6 col-lg-4 col-xl-3 text-center text-md-left">
                 <img class="lawyer-img" src="images/lawyer4.jpg" alt="Lawyer">
-                <h3 class="name">
+                <h3 class="name mb-5">
                     Linister White
                     <span>Attorney General</span>
                 </h3>
@@ -212,7 +222,7 @@
     
     <!-- Our Clients Say  -->
 
-    <section class="page-section dark clients-section">
+    <section class="page-section dark clients-section" id="clients">
             <div class="container">
                 <header class="section-header row align-items-center position-relative">
                     <div class="section-header__box d-flex flex-column justify-content-between" >
@@ -295,7 +305,7 @@
 
     <!-- Recent Publications -->
 
-    <section class="page-section publications-section container">
+    <section class="page-section publications-section container" id="publications">
         <header class="section-header row align-items-center position-relative">
             <div class="section-header__box d-flex flex-column justify-content-between" >
                 <h2 class="section-header__heading">Recent Publications</h2>
@@ -303,9 +313,11 @@
             </div>
         </header>
         <div class="section-wrapper row">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 mb-5">
                 <a class="publications__link text-reset text-decoration-none" href="#">
-                    <img class="publications__img img-fluid" src="images/public1.jpg" alt="Lawyer">
+                    <div class="text-center">
+                      <img class="publications__img img-fluid mx-auto" src="images/public1.jpg" alt="Lawyer">
+                    </div>
                     <h3 class="publications__title">Publication Title</h3>
                     <div class="d-flex justify-content-between">
                         <div class="publications__author">
@@ -335,9 +347,11 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 mb-5">
                 <a class="publications__link text-reset text-decoration-none" href="#">
-                    <img class="publications__img img-fluid" src="images/public2.jpg" alt="Lawyer">
+                    <div class="text-center">
+                      <img class="publications__img img-fluid mx-auto" src="images/public2.jpg" alt="Lawyer">
+                    </div>
                     <h3 class="publications__title">Publication Title</h3>
                     <div class="d-flex justify-content-between">
                         <div class="publications__author">
@@ -367,10 +381,10 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 pb-4">
+            <div class="col-md-6 col-lg-4 mb-5">
                 <a class="publications__link text-reset text-decoration-none" href="#">
-                    <div class="d-flex justify-content-center">
-                        <img class="publications__img img-fluid justify-self-end" src="images/public3.jpg" alt="Lawyer">
+                    <div class="text-center">
+                        <img class="publications__img img-fluid mx-auto justify-self-end" src="images/public3.jpg" alt="Lawyer">
                     </div>
                     <h3 class="publications__title">Publication Title</h3>
                     <div class="d-flex justify-content-between">
@@ -406,7 +420,7 @@
 
         <!-- Our Clients Say  -->
 
-    <section class="page-section dark faq-section">
+    <section class="page-section dark faq-section" id="faq">
         <div class="container">
             <header class="section-header row align-items-center position-relative">
                 <div class="section-header__box d-flex flex-column justify-content-between" >
@@ -415,17 +429,44 @@
                 </div>
             </header>
             <div class="section-wrapper d-flex">
-                <!-- Add collapse accordions
-From the course: Bootstrap 4 Essential Training
- -->
+                <!-- Collapse accordions to be added -->
             </div>
         </div>
     </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      (function($) {
+        $("a[href*=\\#]:not([href=\\#])").click(function()
+        {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+              || location.hostname == this.hostname) 
+          {
+            
+            var target = $(this.hash),
+            headerHeight = 50; // Get fixed header height
+                  
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    
+            if (target.length) 
+            {
+              $('.navbar-collapse').collapse('hide');
+
+              $('html,body').animate({
+                scrollTop: target.offset().top - headerHeight
+              }, 500);
+              return false;
+            }
+          }
+        });
+      })(jQuery);
+    </script>
   </body>
 </html>

@@ -63,10 +63,13 @@ h3 {
 }
 
 .navbar {
-    padding: 20px 0;
+    padding: 10px 0;
     position: fixed;
-    z-index: 9999;
     background-color: #ffffff;
+}
+
+.navbar-toggler-icon i {
+    font-size: 28px;
 }
 
 .navbar-brand {
@@ -75,6 +78,7 @@ h3 {
     font-size: 25px;
     font-weight: 700;
     text-transform: uppercase;
+    padding-left: 10px;
 }
 
 .nav-link {
@@ -147,7 +151,7 @@ h3 {
 .hero-section {
     position: relative;
     margin-bottom: 0;
-    margin-top: 87px;
+    margin-top: 67px;
     background: black;
 }
 
@@ -162,10 +166,10 @@ h3 {
 .hero-section__heading {
     position: relative;
     padding-left: 18px;
-    height: 94px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .hero-section__heading > p {
@@ -177,7 +181,7 @@ h3 {
     content: '';
     position: absolute;
     background-color: #e8bf5d;
-    height: 85px;
+    height: 80%;
     width: 2px;
     top: 50%;
     margin-left: -18px;
@@ -201,7 +205,7 @@ h3 {
     color: #ffffff;
 }
 
-.hero-cta {
+.hero-cta__button {
     width: 181px;
     height: 50px;
     border-radius: 25px;
@@ -211,7 +215,7 @@ h3 {
     justify-content: center;
 }
 
-.hero-cta:hover {
+.hero-cta__button:hover {
     background: #eecf86;
 }
 
@@ -291,10 +295,10 @@ h3 {
 }
 
 .history-section__date {
-    font-size: 21px;
-    font-weight: 700;
+    font-size: 18px;
     width: 100px;
     flex-shrink: 0;
+    margin-left: 10px;
 }
 
 .expertise-section p {
@@ -313,7 +317,9 @@ h3 {
 .practice__icon {
     color: #e8bf5d;
     font-size: 35px;
-    margin-top: -10px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .practice__point {
@@ -439,12 +445,15 @@ h3 {
     background: #ffffff;
 }
 
-
 /* ========== Publications */
 
 .publications__img {
     margin-bottom: 30px;
     transition: 0.2s;
+}
+
+.publications__link {
+  display: block;
 }
 
 .publications__link:hover > .publications__img {
@@ -506,6 +515,10 @@ h3 {
     margin-right: 5px;
 } 
 
+.about-section, .lawyers-section, .publications-section {
+  padding-bottom: 50px;
+}
+
 /* ========================= MEDIA */
 
 /* // Extra small devices (portrait phones, less than 576px) */
@@ -518,16 +531,89 @@ h3 {
     .section-header__text {
         font-size: 18px;
     }
+
+    .title {
+        font-size: 10px;
+    }
  }
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
+    .page-section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .about-section, .lawyers-section, .publications-section {
+      padding-bottom: 0;
+    }
+
+    .section-header {
+      margin-bottom: 50px;
+    }
+
+    .hero-cta {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-section__heading {
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero-section__heading::before {
+        display: none;
+    }
+
+    .history-section {
+      margin-bottom: 40px;
+    }
+
+    .practice__point {
+      margin-left: 0;
+    }
+
+    .practice__point p {
+        width: auto;
+    }
     
- }
+    .practice__icon {
+      margin-top: 20px;
+    }
+
+    .practice__title {
+      text-align: center;
+    }
+
+    .carousel-indicators {
+      bottom: -30px;
+    }
+}
 
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
-    
+@media (max-width: 991.98px) {
+
+    .hero-section {
+        margin-top: 67px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .subtitle {
+        font-size: 21px;
+    }
+
+    .practice-section {
+      padding-bottom: 10px;
+    }
+
+    .practice__col {
+      margin-bottom: 40px;
+    }
  }
 
 /* // Large devices (desktops, less than 1200px) */
