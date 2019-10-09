@@ -100,13 +100,13 @@ h3 {
 }
 
 
-.underline {
+.navbar .underline {
     position: relative !important;
     display: block;
     /* letter-spacing: 0.56px; */
 }
 
-.underline::before {
+.navbar .underline::before {
     display: block;
     content: '';
     position: absolute !important;
@@ -119,21 +119,21 @@ h3 {
     transition: all 0.2s ease-in-out;
 }
 
-.underline:hover {
+.navbar .underline:hover {
     color: #111111;
 }
 
-.underline:hover::before {
+.navbar .underline:hover::before {
     width: 100%;
     opacity: 1;
 }
 
-.underline:hover .active::after {
+.navbar .underline:hover .active::after {
     width: 0;
     opacity: 1;
 }
 
-.active::after {
+.navbar .active::after {
     width: 100%;
     display: block;
     content: '';
@@ -519,6 +519,118 @@ h3 {
   padding-bottom: 50px;
 }
 
+/* ========== FAQ */
+
+.accordion {
+    margin-right: 30px;
+    width: 100%;
+}
+
+.card {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 700;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.card-header {
+    border-bottom: 3px solid #e8bf5d;
+    font-weight: 700;
+    position: relative;
+    transition: 0.2s;
+}
+
+.card-header.active {
+    color: #E8BF5D;
+}
+
+.card .btn {
+    font-size: 15px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    transition: none;
+}
+
+.plusminus-icon {
+    width: 16px;
+    height: 16px;
+    position: relative;
+}
+
+
+.plusminus-icon::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 16px;
+    height: 3px;
+    background: #ffffff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.plusminus-icon.active::before {
+    background: #e8bf5d;
+}
+
+.plusminus-icon.active::after {
+    background: #e8bf5d;
+    opacity: 0;
+}
+
+.plusminus-icon::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 3px;
+    height: 16px;
+    background: #ffffff;
+    transform-origin: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.2s;
+    opacity: 1;
+}
+
+.card-header:hover, .plusminus-icon:hover {
+    opacity: 0.8;
+}
+
+.card-body {
+    background-color: #e8bf5d;
+    color: #111111;
+    z-index: 10;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.56px;
+}
+
+.custom-card {
+    width: 500px;
+    padding: 42px 46px;
+    border-radius: 3px;
+    background-color: #e8bf5d;
+    color: #111111;
+    z-index: 10;
+    flex-shrink: 0;
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* .btn-link[aria-expanded="true"] .plusminus-icon::after {
+    background: green;
+    
+}
+
+.btn-link[aria-expanded="false"] {
+    background: red;
+} */
+
 /* ========================= MEDIA */
 
 /* // Extra small devices (portrait phones, less than 576px) */
@@ -613,6 +725,10 @@ h3 {
 
     .practice__col {
       margin-bottom: 40px;
+    }
+
+    .accordion {
+        margin-right: 0;
     }
  }
 
