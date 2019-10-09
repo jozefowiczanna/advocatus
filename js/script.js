@@ -1,8 +1,10 @@
 (function($) {
+    "use strict";
+
     $("a[href*=\\#]:not([href=\\#])").click(function()
     {
         if ((location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-            || location.hostname == this.hostname) && $(this).hasClass("nav-link")) 
+            || location.hostname == this.hostname) && ($(this).hasClass("nav-link") || $(this).hasClass("cta-btn"))) 
         {
         
         var target = $(this.hash),
@@ -30,8 +32,6 @@
         const cardBody = card.find(".card-body");
         $(".custom-card").html(cardBody.text()); // copy text from active card (xl screens only)
         const otherCards = card.siblings();
-        console.log(otherCards);
-        console.log(otherCards.find(".card-header"));
         otherCards.find(".card-header").removeClass("active");
         otherCards.find(".plusminus-icon").removeClass("active");
         if(card.find(".card-body").is(":visible")) {
@@ -42,5 +42,16 @@
             plusminusIcon.addClass("active");
         }
     });
+
+    $('.custom-input').each(function(){
+        $(this).on('blur', function(){
+            if($(this).val().trim() != "") {
+                $(this).addClass('has-val');
+            }
+            else {
+                $(this).removeClass('has-val');
+            }
+        })    
+    })
 
     })(jQuery);
