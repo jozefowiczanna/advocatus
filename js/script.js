@@ -1,10 +1,19 @@
 (function($) {
-    "use strict";
+      $('.custom-form__input').each(function(){
+          $(this).on('blur', function(){
+              if($(this).val().trim() != "") {
+                  $(this).addClass('has-val');
+              }
+              else {
+                  $(this).removeClass('has-val');
+              }
+          })    
+      })
 
     $("a[href*=\\#]:not([href=\\#])").click(function()
     {
         if ((location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-            || location.hostname == this.hostname) && ($(this).hasClass("nav-link") || $(this).hasClass("cta-btn"))) 
+            || location.hostname == this.hostname) && ($(this).hasClass("scroll-js"))) 
         {
         
         var target = $(this.hash),
@@ -42,16 +51,5 @@
             plusminusIcon.addClass("active");
         }
     });
-
-    $('.custom-input').each(function(){
-        $(this).on('blur', function(){
-            if($(this).val().trim() != "") {
-                $(this).addClass('has-val');
-            }
-            else {
-                $(this).removeClass('has-val');
-            }
-        })    
-    })
 
     })(jQuery);
